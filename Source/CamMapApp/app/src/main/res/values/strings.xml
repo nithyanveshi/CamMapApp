@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CamMapApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome..!!!</string>
+    <string name="signUpText">Sign Up</string>
+    <string name="firstNameText">First name</string>
+    <string name="lastNameText">Last name</string>
+    <string name="addressText">Address</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_app_id">323336383310</string>
+    <string name="msgWarn">Please fill all the fields.</string>
+</resources>
