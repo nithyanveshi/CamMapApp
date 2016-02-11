@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.raparthiss.cammapapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome"
+        android:id="@+id/signUpWelcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstName"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/signUpWelcome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/signUpWelcome"
+        android:layout_alignEnd="@+id/signUpWelcome"
+        android:hint="@string/firstNameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastName"
+        android:layout_below="@+id/firstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp"
+        android:layout_alignRight="@+id/firstName"
+        android:layout_alignEnd="@+id/firstName"
+        android:hint="@string/lastNameText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressText"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/addressText" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton1"
+        android:layout_alignTop="@+id/firstName"
+        android:layout_alignRight="@+id/addressText"
+        android:layout_alignEnd="@+id/addressText"
+        android:layout_above="@+id/addressText"
+        android:layout_toRightOf="@+id/firstName"
+        android:layout_toEndOf="@+id/firstName"
+        android:src="@drawable/cam_button"
+        android:layout_alignParentEnd="false"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:background="#fdfdfd"
+        android:onClick="selectImage" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signUpText"
+        android:id="@+id/SignUpButton"
+        android:onClick="onClickSignUp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msgWarn"
+        android:id="@+id/textWarn"
+        android:layout_below="@+id/addressText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textColor="#ff0000"
+        android:visibility="invisible" />
+</RelativeLayout>
